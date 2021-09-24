@@ -1,35 +1,16 @@
 * {
     padding: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
     font-size: 24px;
 }
 
-.rainbow {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 128px;
-}
-.rainbowanim{
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: rainbowanims 6s ease-in-out infinite;
-    background-size: 400% 100%;
-}
-
-@keyframes rainbowanims {
-    0%,100% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
+body {
+    background-image: url(../image/bg.png);
+    background-size: auto;
+    background-attachment: fixed;
 }
 
 #first-para {
-    color: rgb(9, 9, 9);
     font-size: 32px;
     margin: 30px;
 }
@@ -38,14 +19,9 @@
     font-weight: bolder;
     font-size: 32px;
 }
-.list-container {
-    margin: 50px;
-}
-.boxnav1 {
-    display: flex;
-    margin: 20px 60px auto;
-    flex-direction: row;
-    flex-flow: wrap;
+#whale {
+    margin: auto;
+    padding: 30px;
 }
 li {
     margin-left: 40px;
@@ -53,29 +29,35 @@ li {
 ol li {
     margin-left: 60px;
 }
-.box1, .box2, .box3, .box4{
-    width: 370px;
-    height: 320px;
-    border-top: solid #ffa952 15px;
-    border-right: solid #ffa952 15px;
-    padding: 15px;
-    margin: 30px 33px;
-    transition: .5s;
-    background-color: #feffdf;
-    box-shadow: 6px 4px #c54a4a;
+h2 {
+    font-weight: bold;
 }
-.box1 h2, .box2 h2, .box3 h2, .box4 h2{
+.card, #box{
+    padding: 15px;
+    margin: 30px 30px;
+    transition: .5s;
+    background-color: #fff;
+    box-shadow: 6px 4px #ffa952;
+}
+.card h2 {
     letter-spacing: 1px;
+    margin-top: 20px;
     text-align: center;
 }
-.box4 a {
+.card .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+#box a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
     transition: .5s;
 }
-.box4 a:hover {
-    color: #c54a4a;
+#box a:hover {
+    color: #ffa952;
 }
 .boxnav2 {
     display: flex;
@@ -83,95 +65,7 @@ ol li {
     flex-direction: row;
     flex-flow: wrap;
 }
-.box4{
-    width: 1400px;
-    height: 520px;
+#box{
     margin: 30px 33px;
     transition: .5s;
-}
-/*hover for box cards*/
-.box1:hover, .box2:hover, .box3:hover {
-    transform: scale(1.2);
-    position: relative;
-    box-shadow: 8px 6px #c54a4a;
-    border-bottom-left-radius: 35px;
-}
-.box4:hover {
-    transform: scale(1.1);
-    position: relative;
-    box-shadow: 8px 6px #c54a4a;
-    border-bottom-left-radius: 35px;
-}
-
-@media only screen and (min-width: 320px) {
-    .rainbow {
-        font-size: 76px;
-    }
-    #first-para, #first-para span {
-        font-size: 20px;
-    }
-    .boxnav1 {
-        margin: auto;
-    }
-    .boxnav2 {
-        margin: auto;
-    }
-    .box1, .box2, .box3 {
-        width: 520px;
-        height: max-content;
-    }
-    .box4 {
-        height: max-content;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .rainbow {
-        font-size: 76px;
-    }
-    #first-para, #first-para span {
-        font-size: 24px;
-    }
-    .box1, .box2, .box3 {
-        width: 700px;
-        height: 290px;
-    }
-    .box4 {
-        height: max-content;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    #first-para, #first-para span {
-        font-size: 24px;
-    }
-    .box1, .box2, .box3 {
-        width: 310px;
-        height: 380px;
-    }
-}
-
-@media only screen and (min-width: 1600px) {
-    #first-para, #first-para span {
-        font-size: 24px;
-    }
-    .box1, .box2, .box3 {
-        width: 400px;
-        height: 380px;
-    }
-    .box4 {
-        width: 1425px;
-    }
-}
-@media only screen and (min-width: 1920px) {
-    #first-para, #first-para span {
-        font-size: 24px;
-    }
-    .box1, .box2, .box3 {
-        width: 520px;
-        height: 380px;
-    }
-    .box4 {
-        width: 1800px;
-    }
 }
